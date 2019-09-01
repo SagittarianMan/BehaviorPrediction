@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<style>
+
+body {
+    background-image: url(4.png);
+    /*background:palegreen;*/
+    min-width:300px;
+    }
+#input{
+	width:100px;
+}	
+#psd{
+	width:100px;
+}	
+</style>
+    <script src="common.js"></script>
+ <script src='popup.js'></script>
+</head>
+<div id="input_div">
+<input type="text" placeholder="请输入您的昵称" id="input"/><br>
+    <input type="password" placeholder="请输入您的密码" id="psd"/><br>
+    <input type="button" id="btn" value="登录" /><br>
+    <a href="register.html">注册</a>
+</div>
+<body>
+<div id="user" style="float:right">
+<div id="user_name" style="float:left"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="option" href="options.html" style="float: right">选项</a>
+</div>
+<h1>获取历史记录</h1>
+<div id="test" >
+    <div id='responseText' style="float: left"></div>
+    <input type="button" style="float: left" value="删除cookie" id="delete_cookie"/>
+    <input type="button" style="float: left" value="刷新" id="refresh"/>
+</div>
+<br>
+<div id='historyList'></div>
+</body>
+</html>

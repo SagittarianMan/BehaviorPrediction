@@ -1,0 +1,39 @@
+#include <stdio.h>
+void foo(int * a, int * b)
+{
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
+}
+
+void main()
+{
+	int a = 1, b = 2, c = 3;
+	foo(&a, &b);
+	foo(&b, &c);
+	foo(&c, &a);
+	printf("%d %d %d", a, b, c);
+}
+
+VS2017专业版和企业版激活密钥
+
+需要的请自取～
+
+Enterprise:
+
+NJVYC-BMHX2-G77MM-4XJMR-6Q8QF
+
+Professional:
+
+KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
+
+
+Chrome保存cookie时如果cookie值有中文字符需要编码。比如name，保存时需写成encodeURI(name)
+
+我的域名：
+edison-zsh.xicp.net
+edison-zsh.wicp.net
+zhao1.iok.la
+zhaosonghui.iok.la
+zhaosonghui.iask.in
+adison.iask.in

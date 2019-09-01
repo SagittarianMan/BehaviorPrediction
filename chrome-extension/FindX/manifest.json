@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "FindX",
+	"version": "1.0",
+	"description": "Help to find someone who has common preferences with you and websites you might be interested in.",
+	"browser_action": {
+		"default_icon": "icon19.png",
+		"default_popup": "popup2.html"
+	},
+	"icons": {
+		"38":"icon38.png",
+     	"16": "icon16.png",
+     	"48": "icon48.png"
+   },
+	"background":{
+		"scripts":["background.js"],
+		"persistent":true
+	},
+	"options_page":"options.html",
+	"update_url": "http://172.19.115.21/myextensions/FindX/updates.xml",
+	"permissions":[
+		"history",
+		"cookies",
+		"tabs",
+		"http://*/*", "https://*/*"
+		]
+}

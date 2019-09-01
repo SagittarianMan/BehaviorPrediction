@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推荐</title>
+    <style>
+
+        body {
+            background-image: url(4.png);
+            /*background:palegreen;*/
+            min-width:300px;
+        }
+        #input{
+            width:100px;
+        }
+        #psd{
+            width:100px;
+        }
+        #rec_webs ul li{
+            list-style: none;
+        }
+    </style>
+    <script src="common.js"></script>
+    <script src="popup2.js"></script>
+</head>
+<body>
+<div id="input_div">
+    <input type="text" placeholder="请输入您的昵称" id="input"/><br>
+    <input type="password" placeholder="请输入您的密码" id="psd"/><br>
+    <input type="button" id="btn" value="登录" /><br>
+    <a href="register.html">注册</a>
+</div>
+<div id="user" style="float:right">
+    <div id="user_name" style="float:left"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="option" href="options.html" style="float: right">选项</a>
+</div>
+<h2>您可能感兴趣的网址</h2>
+<div id="rec_webs">
+
+</div>
+<h2>您可能感兴趣的网友</h2>
+<div id="rec_users">
+
+</div>
+</body>
+</html>

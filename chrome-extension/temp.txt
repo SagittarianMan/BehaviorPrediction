@@ -1,0 +1,36 @@
+<script>
+  (function() {
+    var cx = '004707999221402778318:sq0bj2fllqm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+API Key:
+AIzaSyA8Kz_3CTIpFCwlqP1jv55Od7ZQVvVaj_M
+
+chrome.exe --enable-benchmarking
+
+今天偶然发现了webservice，不会创建，上网查   0322
+
+Collecting tensorflow
+  Could not find a version that satisfies the requirement tensorflow (from versions: )
+No matching distribution found for tensorflow
+
+beautifulsoup4 (4.5.1) - Latest: 4.5.3 [wheel]
+cffi (1.9.1) - Latest: 1.10.0 [wheel]
+cryptography (1.6) - Latest: 1.8.1 [wheel]
+cssselect (1.0.0) - Latest: 1.0.1 [wheel]
+idna (2.1) - Latest: 2.5 [wheel]
+pyasn1 (0.1.9) - Latest: 0.2.3 [wheel]
+PyMySQL (0.7.9) - Latest: 0.7.11 [wheel]
+pyOpenSSL (16.2.0) - Latest: 17.0.0 [wheel]
+requests (2.12.1) - Latest: 2.13.0 [wheel]
+setuptools (20.10.1) - Latest: 35.0.1 [wheel]
+w3lib (1.16.0) - Latest: 1.17.0 [wheel]
+zope.interface (4.3.2) - Latest: 4.4.0 [wheel]

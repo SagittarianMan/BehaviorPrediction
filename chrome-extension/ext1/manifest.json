@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "My First Extension",
+	"version": "1.0",
+	"description": "The first extension that I made.",
+	"browser_action": {
+		"default_icon": "src/icon.png",
+		"popup": "src/popup.html"
+	},
+	"permissions": [
+	    "activeTab",
+	    "https://ajax.googleapis.com/"
+	  ]
+}

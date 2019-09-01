@@ -1,0 +1,40 @@
+<html>
+ <head>
+ <title> JavaScript获取客户端IP地址,MAC地址,主机名的方法</title>
+ </head> <body>
+ <object classid ="CLSID:76A64158-CB41-11D1-8B02-00600806D9B6"id ="locator"style ="display:none;"> </object>
+ <object classid ="CLSID:75718C9A-F029-11d1-A1AC-00C04FB6C223"id ="foo"style ="display:none;"> </object>    
+ <form id ="myForm">
+ <p> MAC地址:<input type ="text"name ="macAddress"/> </p>
+ <p> IP地址:<input type ="text"name ="ipAddress"/> </p>
+ <p>主机名:<input type ="text"name ="hostName"/> </p>
+ </ form>
+ <script language ="javascript">
+ alert('1');
+ var sMacAddr ="",sIPAddr ="",sDNSName ="";
+ var service = locator.ConnectServer();
+ service.Security_.ImpersonationLevel = 3;
+ service.InstancesOfAsync(foo,"Win32_NetworkAdapterConfiguration");
+ alert('1+');
+ </script>
+ <script for ="foo"event ="OnObjectReady(objObject,objAsyncContext)"language ="JScript">
+ alert('2');
+ if(objObject.IPEnabled!= null && objObject.IPEnabled!="undefined"&& objObject.IPEnabled == true){
+	 if(objObject.IPEnabled && objObject.IPAddress(0)!= null && objObject.IPAddress(0)!="undefined"){
+		 sIPAddr = objObject.IPAddress(0);
+	 }}
+	 if(objObject.MACAddress!= null && objObject.MACAddress!="undefined"){
+		 sMacAddr = objObject.MACAddress;
+	 }}
+	 if(objObject.DNSHostName!= null && objObject.DNSHostName!="undefined"){
+		 sDNSName = objObject.DNSHostName;
+	 }}
+ }}
+ </script>
+ <script for ="foo"event ="OnCompleted(hResult,pErrorObject,pAsyncContext)"language ="JScript">
+ alert('3');
+ document.getElementById("myForm").macAddress.value = sMacAddr;
+ document.getElementById("myForm").ipAddress.value = sIPAddr;
+ document.getElementById("myForm").hostName.value = sDNSName;
+ </script> </body>
+ </html> 

@@ -1,0 +1,33 @@
+function getRequest(data){
+	//JSON编码
+  var json_data = JSON.stringify(data);
+
+  var request = new XMLHttpRequest();
+  //发送userName,history,userId
+  var userName=document.getElementById("user_name").innerText;
+  //var userId=getUserId();
+  console.log("userName:"+userName);
+   // console.log("userId:"+userId);
+  var url = "http://localhost:8080/FindX/Login?userName="+userName;
+  request.open("POST",url);
+  //alert(url);
+  //显示responseText
+  //var contt = document.getElementById('responseText');
+
+  request.onreadystatechange = function(){
+    if(request.readyState == 4 && request.status == 200){
+      //获得响应的类型
+      var type = request.getResponseHeader("content-type");
+      console.log("GetRequest:content-type:"+type);
+      console.log("GetRequest:responseText1:"+request.responseText);
+      //contt.innerText = request.responseText;
+    }
+    else{
+      //alert(request.status);
+      console.log("GetRequest:responseText2:"+request.responseText);
+    }
+  }
+  request.setRequestHeader("Content-Type","application/json");
+    //json_data =encodeURI(json_data);
+  request.send(json_data);
+}

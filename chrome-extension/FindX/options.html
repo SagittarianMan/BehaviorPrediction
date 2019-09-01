@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>选项页-FindX</title>
+    <style>
+        body {
+            background-image: url(3.jpg);
+        }
+        input{
+            size: 15px;
+        }
+        #login_back{
+            background: cornflowerblue;
+            opacity: 0.5;
+            position: absolute;
+            top:20%;
+            left: 40%;
+            width: 20%;
+            height: 25%;
+            text-align: center;
+        }
+        #login_front{
+            position: absolute;
+            top:20%;
+            left: 25%;
+            width: 50%;
+            height: 20%;
+            text-align: center;
+        }
+    </style>
+    <script src="common.js"></script>
+    <script src='options.js'></script>
+</head>
+<body style="font-family: 'Comic Sans MS';font-size: large">
+<div align="center"  id="base">
+    FindX<br>
+    这是选项页<br>
+    This is option page.<br>
+    <input type="button" value="修改昵称" id="modify_btn">&nbsp;&nbsp;
+    <input type="button" value="完善信息" id="addinfo_btn"><br>
+    <input type="button" value="测试" id="test_btn">
+
+    <table id="modify">
+        <tr>
+            <td>当前昵称：</td>
+            <td><div id="old_name"></div></td>
+        </tr>
+        <tr>
+            <td align="right">新昵称：</td>
+            <td><input id="new_name" size="15px"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="确认修改" id="ok_btn">
+                &nbsp;&nbsp;
+                <input type="button" value="取消" id="cancel_btn">
+            </td>
+        </tr>
+    </table>
+    <table id = "addinfo">
+        <tr>
+            <td align="right">微信：</td>
+            <td><input id="wechat" placeholder="请输入您的微信号" title="提供你的真实微信号有助于将你推荐给与你兴趣相同的微信用户" size="15px"/></td>
+        </tr>
+        <tr>
+            <td align="right">QQ：</td>
+            <td><input id="qq" placeholder="请输入您的QQ号" title="提供你的真实QQ号有助于将你推荐给与你兴趣相同的QQ用户" size="15px"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="提交" id="ok2_btn">
+                &nbsp;&nbsp;
+                <input type="button" value="取消" id="cancel2_btn">
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="login" style="display: block">
+<div id="login_back" align="center" ></div>
+<div id="login_front"><br>
+    新用户注册<br><br>
+    <input id="user_name" placeholder="起一个好听的名字吧" v="center"/><br>
+    <input id="psd" type="password" placeholder="请输入密码"/><br>
+    <input id="rpsd" type="password" placeholder="请确认您的密码"/><br><br>
+    <input type="button" id="login_submit" value="提交"/>
+</div>
+</div>
+</body>
+</html>

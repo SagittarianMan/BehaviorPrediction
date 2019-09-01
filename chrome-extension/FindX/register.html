@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+    <style>
+        body{
+            background:palegreen;
+            min-width: 500px;
+            min-height: 200px;
+        }
+        #login_back{
+            background: cornflowerblue;
+            opacity: 0.5;
+            position: absolute;
+            top:0%;
+            left: 10%;
+            width: 80%;
+            height: 90%;
+            text-align: center;
+        }
+        #login_front{
+            position: absolute;
+            top:0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    </style>
+    <script src="register.js"></script>
+</head>
+<body>
+<div id="login" style="display: block">
+    <div id="login_back" align="center" ></div>
+    <div id="login_front"><br>
+        新用户登录<br><br>
+        <input id="user_name" placeholder="起一个好听的名字吧" v="center"/><br>
+        <input id="psd" type="password" placeholder="请输入密码"/><br>
+        <input id="rpsd" type="password" placeholder="请确认您的密码"/><br><br>
+        <input type="button" id="submit" value="提交"/>
+    </div>
+</div>
+</body>
+</html>
